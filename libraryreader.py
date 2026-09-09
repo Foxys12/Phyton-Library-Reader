@@ -10,7 +10,7 @@ while True:
         module = importlib.import_module(library)
         all_functions = dir(module)
 
-        print(f"Toplam Eleman Sayısı: {len(all_functions)}\n")
+        print(f"Total number of functions: {len(all_functions)}\n")
 
         for func_name in all_functions:
             if not func_name.startswith("__"):
